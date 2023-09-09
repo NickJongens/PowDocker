@@ -7,29 +7,31 @@ Looking to run your favorite PowerShell scripts seamlessly within Docker contain
 With 'PowDocker,' you can achieve continuous PowerShell automation, harnessing the flexibility and scalability of Docker. Whether it's scripting, testing, or automating tasks, you can do it!
 
 ## Examples
-Real-time Database Logger:
+
+**Real-time Database Logger:**
 Keep a constant watch on your data and log updates to a database with ease. Monitor changes, events, or system activity and maintain a record in real-time using PowerShell and Docker synergy.
 
-Web Scraping on Autopilot:
+**Web Scraping on Autopilot:**
 Automate web scraping tasks without missing a beat. 'PowDocker' ensures your web scraper runs continuously, providing you with up-to-date data effortlessly.
 
-Scheduled Script Runner:
+**Scheduled Script Runner:**
 Schedule and run your PowerShell scripts at regular intervals within Docker containers. 'PowDocker' makes it a breeze to maintain tasks like backups, updates, or routine maintenance.
 
-Event-Driven Automation:
+**Event-Driven Automation:**
 Set up event-driven automation effortlessly. Whether it's responding to incoming data, triggering actions on specific events, or monitoring logs in real-time, 'PowDocker' simplifies the process.
 
-Log Analyzer and Alert System:
+**Log Analyzer and Alert System:**
 Use 'PowDocker' to continuously analyze logs and take action when specific conditions are met. Receive alerts or perform actions based on log content, ensuring you stay on top of system health.
 
-Custom IoT Data Collector:
+**Custom IoT Data Collector:**
 Build a custom Internet of Things (IoT) data collector with 'PowDocker.' Gather sensor data, device stats, or environmental metrics and store them efficiently for analysis.
 
-Resource Usage Tracker:
+**Resource Usage Tracker:**
 Keep tabs on resource usage, such as CPU or memory, in real-time. 'PowDocker' helps you monitor and log these metrics for better system management.
 
-Social Media Listener:
+**Social Media Listener:**
 Monitor social media channels for keywords, mentions, or trends and take automated actions in response. 'PowDocker' lets you stay engaged with your online audience 24/7.
+' lets you stay engaged with your online audience 24/7.
 
 Health Check Service:
 Create a continuous health check service for your applications or servers. Ensure your systems are always up and running by automating health checks and recovery procedures.
