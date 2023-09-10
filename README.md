@@ -1,10 +1,11 @@
 # PowerShellDocker
-Experience the power of 'PowerShellDocker': PowerShell and Docker, seamlessly combined for script automation using supervisord for a continuous run.
+Experience the power of 'PowerShellDocker': PowerShell and Docker, seamlessly combined for script automation using supervisord for a continuously running script.
 
 Welcome to the 'PowerShellDocker' repo – where we blend the power of PowerShell with the magic of Docker! 🚀
 Looking to run your favorite PowerShell scripts seamlessly within Docker containers on a Linux kernel? (Not Windows)
 
-With 'PowerShellDocker,' you can achieve continuous PowerShell automation, harnessing the flexibility and scalability of Docker. Whether it's scripting, testing, or automating tasks, you can do it!
+With 'PowerShellDocker,' you can achieve continuous PowerShell automation, harnessing the flexibility and scalability of Docker. 
+Whether it's scripting, testing, or automating tasks, you can do it! Supervisord ensures the script will run forever, or until you kill the container :)
 
 ## Examples
 
