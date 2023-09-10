@@ -10,12 +10,12 @@ Whether it's scripting, testing, or automating tasks, you can do it! Supervisord
 Edit the **Dockerfile** lines:
 ```
 # Install Powershell modules - Update these to your required modules e.g. AzureRM
-RUN pwsh -Command "Install-Module -Name **AzureRM**  -Force -Scope AllUsers"
+RUN pwsh -Command "Install-Module -Name AzureRM  -Force -Scope AllUsers"
 ```
 ```
 # Install linux packages for system use e.g. nano
 RUN apt-get update && \
-    apt-get install -y **nano**
+    apt-get install -y nano
 ```
 
 ## Variables & Docker
