@@ -32,7 +32,7 @@ $tenantId = $env:TENANT_ID
 ## Build your container & push to the Docker Hub
 ```
 docker login
-docker build <containernametotag> .
+docker build .
 docker tag <containernametotag:tag <dockerhubuser>/<containerregistryname>:<tag>
 docker push <dockerhubuser>/containerregistryname>:<tag>
 ```
