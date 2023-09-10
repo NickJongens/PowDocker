@@ -4,6 +4,6 @@ services:
     image: nickjongens/dockerps
     container_name: dockerps
     environment:
-      - CLIENT_ID=<clientid>
-      - CLIENT_SECRET=<clientsecret>
-      - TENANT_ID=<tenantid>
+      - CLIENT_ID=<your_client_id>
+      - CLIENT_SECRET=<your_client_secret>
+      - TENANT_ID=<your_tenant_id>
