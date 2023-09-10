@@ -43,8 +43,8 @@ Keep your website or content platform fresh by automating content updates at reg
 
 Edit the Dockerfile lines:
 ```
-# Install Powershell modules - Update these to your required modules
-RUN pwsh -Command "Install-Module -Name <modulename> -Force -Scope AllUsers"
+# Install Powershell modules - Update these to your required modules e.g. AzureRM
+RUN pwsh -Command "Install-Module -Name AzureRM  -Force -Scope AllUsers"
 ```
 ```
 # Install linux packages for system use e.g. nano
