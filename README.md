@@ -38,3 +38,16 @@ Create a continuous health check service for your applications or servers. Ensur
 
 Automated Content Updater:
 Keep your website or content platform fresh by automating content updates at regular intervals. 'PowDocker' can fetch, format, and publish new content seamlessly.
+
+## Updating modules & packages in Dockerfile
+
+Edit the Dockerfile lines:
+```
+# Install Powershell modules - Update these to your required modules
+RUN pwsh -Command "Install-Module -Name <modulename> -Force -Scope AllUsers"
+```
+```
+# Install linux packages for system use e.g. nano
+RUN apt-get update && \
+    apt-get install -y nano
+```
