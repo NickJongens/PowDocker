@@ -29,10 +29,19 @@ $clientSecret = $env:CLIENT_SECRET
 $tenantId = $env:TENANT_ID
 ```
 
-## Build your container
+## Build your container & push to the Docker Hub
 ```
+docker login
 docker build <containernametotag> .
 docker tag <containernametotag:tag <dockerhubuser>/<containerregistryname>:<tag>
+docker push <dockerhubuser>/containerregistryname>:<tag>
+```
+
+## Example
+```
+docker build psdocker .
+docker tag psdocker:latest nickjongens/psdocker:latest
+docker push nickjongens/psdocker:latest
 ```
 
 ## Deploy your container
@@ -44,7 +53,7 @@ docker run -d \
     -e CLIENT_ID=<your_client_id> \
     -e CLIENT_SECRET=<your_client_secret> \
     -e TENANT_ID=<your_tenant_id> \
-    <registrycontainername:<tag>>
+    <registrycontainername>:<tag>
 
 ```
 
