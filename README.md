@@ -33,7 +33,7 @@ $tenantId = $env:TENANT_ID
 ```
 docker login
 docker build .
-docker tag <containernametotag:tag <dockerhubuser>/<containerregistryname>:<tag>
+docker tag <containernametotag:<tag> <dockerhubuser>/<containerregistryname>:<tag>
 docker push <dockerhubuser>/containerregistryname>:<tag>
 ```
 
