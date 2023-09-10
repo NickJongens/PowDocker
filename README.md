@@ -1,5 +1,5 @@
 # PowDocker
-Experience the power of 'PowDocker': PowerShell and Docker, seamlessly combined for script automation using supervised for a continuous run.
+Experience the power of 'PowDocker': PowerShell and Docker, seamlessly combined for script automation using supervisord for a continuous run.
 
 Welcome to the 'PowDocker' repo – where we blend the power of PowerShell with the magic of Docker! 🚀
 Looking to run your favorite PowerShell scripts seamlessly within Docker containers on a Linux kernel? (Not Windows)
