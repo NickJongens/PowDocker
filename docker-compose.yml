@@ -1,0 +1,9 @@
+version: '3'
+services:
+  my-powershell-container:
+    image: nickjongens/dockerps
+    container_name: dockerps
+    environment:
+      - CLIENT_ID=<clientid>
+      - CLIENT_SECRET=<clientsecret>
+      - TENANT_ID=<tenantid>
