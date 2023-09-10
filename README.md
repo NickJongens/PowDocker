@@ -1,5 +1,5 @@
 # PSDocker
-Experience the power of 'PSDocker': PowerShell and Docker, seamlessly combined for script automation using supervisord for a continuously running script 🚀
+Experience the power of **PSDocker**: PowerShell and Docker, seamlessly combined for script automation using supervisord for a continuously running script 🚀
 Looking to run your favorite PowerShell scripts seamlessly within Docker containers on a Linux kernel, not as Windows container? Want to be able to put a powershell script in a kubernetes cluster?
 
 With 'PSDocker,' you can achieve continuous PowerShell automation, harnessing the flexibility and scalability of Docker. 
@@ -19,9 +19,9 @@ RUN apt-get update && \
 ```
 
 ## Variables & Docker
-You can add variables to the script that you'd like to be passed through from your docker run command:
+You can add variables to the **script.ps1** that you'd like to be passed through from your docker run command:
 
-Example:
+Script Variable Example:
 
 ```
 $clientId = $env:CLIENT_ID
@@ -29,14 +29,22 @@ $clientSecret = $env:CLIENT_SECRET
 $tenantId = $env:TENANT_ID
 ```
 
-You can then provide these in your docker run command:
+## Build your container
+```
+docker build <containernametotag> .
+docker tag <containernametotag:tag <dockerhubuser>/<containerregistryname>:<tag>
+```
+
+## Deploy your container
+
+You can then provide variables in your docker run command:
 ```
 docker run -d \
     --name <dockercontainername> \
     -e CLIENT_ID=<your_client_id> \
     -e CLIENT_SECRET=<your_client_secret> \
     -e TENANT_ID=<your_tenant_id> \
-    <yourregistrycontainername>
+    <registrycontainername:<tag>>
 
 ```
 
@@ -47,40 +55,14 @@ docker run -d \
 
 Keep a constant watch on your data and log updates to a database with ease. Monitor changes, events, or system activity and maintain a record in real-time using PowerShell and Docker synergy.
 
-**Web Scraping on Autopilot:**
+**Log Analyser and Alert System:**
 
-Automate web scraping tasks without missing a beat. 'PSDocker' ensures your web scraper runs continuously, providing you with up-to-date data effortlessly.
-
-**Scheduled Script Runner:**
-
-Schedule and run your PowerShell scripts at regular intervals within Docker containers. 'PSDocker' makes it a breeze to maintain tasks like backups, updates, or routine maintenance.
-
-**Event-Driven Automation:**
-
-Set up event-driven automation effortlessly. Whether it's responding to incoming data, triggering actions on specific events, or monitoring logs in real-time, 'PSDocker' simplifies the process.
-
-**Log Analyzer and Alert System:**
-
-Use 'PSDocker' to continuously analyze logs and take action when specific conditions are met. Receive alerts or perform actions based on log content, ensuring you stay on top of system health.
+Use 'PSDocker' to continuously analyse logs and take action when specific conditions are met. Receive alerts or perform actions based on log content, ensuring you stay on top of system health.
 
 **Custom IoT Data Collector:**
 
 Build a custom Internet of Things (IoT) data collector with 'PSDocker.' Gather sensor data, device stats, or environmental metrics and store them efficiently for analysis.
 
-**Resource Usage Tracker:**
-
-Keep tabs on resource usage, such as CPU or memory, in real-time. 'PSDocker' helps you monitor and log these metrics for better system management.
-
-**Social Media Listener:**
-
-Monitor social media channels for keywords, mentions, or trends and take automated actions in response. 'PSDocker' lets you stay engaged with your online audience 24/7.
-' lets you stay engaged with your online audience 24/7.
-
 **Health Check Service**:
 
 Create a continuous health check service for your applications or servers. Ensure your systems are always up and running by automating health checks and recovery procedures.
-
-**Automated Content Updater**:
-
-Keep your website or content platform fresh by automating content updates at regular intervals. 'PSDocker' can fetch, format, and publish new content seamlessly.
-
