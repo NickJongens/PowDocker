@@ -5,17 +5,17 @@ Looking to run your favorite PowerShell scripts seamlessly within Docker contain
 With 'PowerShellDocker,' you can achieve continuous PowerShell automation, harnessing the flexibility and scalability of Docker. 
 Whether it's scripting, testing, or automating tasks, you can do it! Supervisord ensures the script will run forever, or until you kill the container :)
 
-## Updating modules & packages in Dockerfile
+## Installing modules & packages
 
-Edit the Dockerfile lines:
+Edit the **Dockerfile** lines:
 ```
 # Install Powershell modules - Update these to your required modules e.g. AzureRM
-RUN pwsh -Command "Install-Module -Name AzureRM  -Force -Scope AllUsers"
+RUN pwsh -Command "Install-Module -Name **AzureRM**  -Force -Scope AllUsers"
 ```
 ```
 # Install linux packages for system use e.g. nano
 RUN apt-get update && \
-    apt-get install -y nano
+    apt-get install -y **nano**
 ```
 
 ## Variables & Docker
