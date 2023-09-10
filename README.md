@@ -56,7 +56,13 @@ docker run -d \
     <registrycontainername>:<tag>
 
 ```
+There is also a docker-compose.yml file you can use to deploy the container with.
+You can deploy this by installing docker compose & running the container detached:
 
+```
+sudo apt-install docker-compose -y
+sudo docker-compose up -d
+```
 
 ## Examples (code not provided)
 
