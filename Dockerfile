@@ -1,5 +1,5 @@
 # Use a Linux base image
-FROM ubuntu:latest
+FROM ubuntu:lunar-20231004
 
 # Install PowerShell
 RUN apt-get update && \
