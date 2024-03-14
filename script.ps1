@@ -6,6 +6,9 @@ $ipToMonitor = $env:IP_TO_MONITOR
 $checkedEventsFile = "checked_events.txt"
 $trackedLogsFile = "tracked_logs.txt"
 
+# User agent string
+$userAgent = "MyScript/1.0"
+
 # Check if the files exist, and create them if not
 if (-not (Test-Path $checkedEventsFile)) {
     New-Item -ItemType File -Path $checkedEventsFile | Out-Null
@@ -33,7 +36,13 @@ try {
     # Use the access token to call Microsoft Graph and retrieve sign-in logs
     $graphApiUri = "https://graph.microsoft.com/v1.0/auditLogs/signIns"
 
-    $signInLogs = Invoke-RestMethod -Uri $graphApiUri -Headers @{ "Authorization" = "Bearer $accessToken" }
+    # Add user agent to headers
+    $headers = @{
+        "Authorization" = "Bearer $accessToken"
+        "User-Agent" = $userAgent
+    }
+
+    $signInLogs = Invoke-RestMethod -Uri $graphApiUri -Headers $headers
 
     foreach ($log in $signInLogs.value) {
         $ipAddress = $log.ipAddress
